@@ -6,7 +6,7 @@ export default function CardGames(props) {
         <article className="max-w-[167px] transition w-auto   leading-5 ">
             <div className=" bg-[rgb(14_14_16)] h-full ">
            <div className="max-w-[165px] min-h-[220px]  bg-purple-400">
-            <img className= " max-w-[167px] max-h-[223px]  hover:translate-x-3 hover:translate-y-[-10px] " src={props.imgSrc} alt={props.imgAlt || <img src="./src/img/Sin título.png" alt="" />} /> 
+            <img className= " max-w-[167px] max-h-[223px]  hover:translate-x-3 hover:translate-y-[-10px] " src={props.imgSrc} alt={props.imgAlt || <img src="   https://cdn-icons-png.flaticon.com/512/8083/8083494.png " />} /> 
             </div>
             <div className="grid grid-cols-[90%_10%]">
            
