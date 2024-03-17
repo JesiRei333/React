@@ -2,8 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 .body{
-  background-color:rgb(38_38_44)
-
+  text-overflow: ellipsis;
 }
 
 
