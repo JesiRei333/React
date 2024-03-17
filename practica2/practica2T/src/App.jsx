@@ -71,11 +71,6 @@ function App() {
             )
           })}
          
-
-<CardGames className= " min-w-[167px] min-h-[223px]"
-imgSrc={"./src/img/sss.png"} 
-title= {"niño Jaiba"}
-views={"Jacotomoto"}/>
 </section>
 
 </main>   

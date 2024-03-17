@@ -177,6 +177,13 @@ export const games = [
         imgAlt:"Portada de Helldivers 2",
         title:"Helldivers 2",
         views:"8285 espectadores"
-    }
+    },
+    {
+    imgSrc:"https://static-cdn.jtvnw.net/ttv-boxart/856465807_IGDB-285x380.jpg",
+    imgAlt:"Portada de A Difficult Game about Climbing",
+    title:"A Difficult Game Abo...",
+    views:"123 espectadores",
+    textoBoton: "Esports"
+}
    
 ]
