@@ -44,11 +44,14 @@ export default function App() {
   }
 
   return (
-    <main className="p-5 min-h-screen bg-slate-900 text-slate-300">
+    <main
+      className="p-5 min-h-screen bg-slate-900 text-slate-300
+    bg-[url('https://wallpapers.com/images/hd/cinnamoroll-desktop-bhhl12rk370ivdwb.jpg')]"
+    >
       <div className="w-full flex justify-center items-center gap-2">
         <input
           type="text"
-          className="max-w-full p-2 rounded text-slate-800"
+          className="max-w-sm w-full p-2 rounded text-slate-800 shadow-lg shadow-cyan-500"
           onChange={(event) => setText(event.target.value)}
           onKeyDown={keyDownHandler}
           value={text}
@@ -56,26 +59,31 @@ export default function App() {
 
         <button
           onClick={addHandler}
-          className="bg-indigo-400 text-slate-900 rounded p-2 "
+          className="bg-indigo-400 text-slate-900 rounded-r-xl p-2 hover:bg-indigo-400/50 hover:text-white font-semibold shadow-lg shadow-cyan-500"
         >
           Agregar
         </button>
       </div>
-
-      <div className="w-full flex flex-col gap-2">
+      <br />
+      <div className="w-full flex flex-col  justify-center items-center gap-5 ">
         {todos.map((item, index) => {
           return (
             <div
               key={`item-${index}`}
-              className=" w-full flex justify-center items-center gap-2"
+              className="max-w-sm w-full  flex justify-center items-center gap-2 rounded-xl  bg-cyan-300/30 text-slate-950 shadow-lg shadow-cyan-500 "
             >
-              <p className=" max-w-sm w-full">{item}</p>
+              <p className=" max-w-sm w-full">{item} </p>
 
               <button
                 onClick={removeItem(index)}
-                className="bg-indigo-400 text-slate-900 rounded p-2 "
+                className="bg-indigo-400 text-slate-900 rounded-r-xl p-2 hover:bg-indigo-400/50 hover:text-white font-semibold flex shadow-lg shadow-cyan-500 "
               >
-                Done
+                Done{" "}
+                <img
+                  className="max-w-[20px]"
+                  src="https://cdn-icons-png.flaticon.com/512/1721/1721570.png"
+                  alt="."
+                />
               </button>
             </div>
           );
